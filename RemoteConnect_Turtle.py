@@ -10,7 +10,7 @@ target_port = 22
 pwd = 'xxxxxxxxxxxx'
 un = 'xxxxx'
 ssh.connect( hostname = target_host , username = un, password = pwd )
-stdin, stdout, stderr = ssh.exec_command('sudo python robotics/sensor2.py')
+stdin, stdout, stderr = ssh.exec_command('sudo python robotics/main.py')
 print ("STDOUT:\n%s\n\nSTDERR:\n%s\n" %( stdout.read(), stderr.read() ))
 
 stdin, stdout, stderr = ssh.exec_command('cat text1.txt')
