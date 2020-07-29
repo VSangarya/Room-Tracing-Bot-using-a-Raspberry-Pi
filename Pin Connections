@@ -1,0 +1,20 @@
+The pin connections between the Pi, the motor driver, the ultrasound sensors and the motors :
+
+Pi and MotorDriver(L298N):
+Pi Pin  |  Motor Driver
+2       |   5v pin
+6       |   GND pin
+7       |   IN4
+11      |   IN3
+13      |   IN2
+15      |   IN1
+
+Pi and Front Sensor(HC-SR04)
+18      |    ECHO
+16      |    TRIG
+
+Pi and Right Sensor(HC-SR04)
+29      |    TRIG
+31      |    ECHO
+
+NOTE : I've not included the motor connections or the GND and Vcc connections for the Sensors, and the Driver.
